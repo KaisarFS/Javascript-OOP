@@ -27,10 +27,17 @@
         }
 
         const kaisar = new Person ('Kaisar', 'Firja');
+        kaisar.sayBye = function() {
+            console.log('Selamat tinggal');
+        }
+
         const khansa = new Person ('Khansa', 'Megaputri');
         
         console.log(kaisar);
         console.log(khansa);
+
+        kaisar.sayBye();
+        khansa.run();
     </script>
 </body>
 
