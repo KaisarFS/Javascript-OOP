@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Person(firstName, lastName) {
+  //Sebagai blueprint / prototype / cetakan
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.sayHello = function (name) {
+    console.info(`Hello ${name}, my name is ${this.firstName}`)
+  }
+}
+
+
+const kaisar = new Person();
+kaisar.firstName = 'Kaisar Firjatullah'
+kaisar.lastName = 'Sani Setyawan'
+kaisar.sayHello('Budi')
+
+const budi = new Person();
+budi.firstName = 'Budi'
+budi.lastName = 'Sumargo'
+budi.sayHello('Kaisar')
+
+
+console.log(kaisar);
+console.log(budi);
+    </script>
+</body>
+</html>
